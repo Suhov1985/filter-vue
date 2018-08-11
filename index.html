@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "ru">
+<head>
+	<meta charset = "utf-8">
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+
+	<title>Vue</title>
+
+	<meta name = "description" content = "Title"/><!-- Description of the page -->
+	<meta name = "author" content = "Grebenyuk Viktor"><!-- Author Name -->
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+	<link rel = "stylesheet" href = "css/bootstrap.min.css"><!-- Bootstrap Style -->
+	<link rel = "stylesheet" href = "css/style.css"><!-- Custom Style -->
+</head>
+<body>
+<!--HEADER-->
+	<header class = "header"> <!--header__main-->
+	</header>
+<!--HEADER END-->
+
+<!--MAIN BEGIN-->
+	<main class="main" id="main">
+		<div id="app">
+			{{ message }}
+		</div>
+	</main>
+<!--MAIN END-->
+
+<!--FOOTER-->
+	<footer class="footer">
+	</footer>
+<!--FOOTER END-->
+	<script src = "js/jquery.min.js"></script><!-- Jquery Library -->
+	<script src = "js/bootstrap.min.js"></script><!-- Bootstrap Library -->
+	<script src = "js/app.js"></script><!-- Custom Library -->
+	<script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                message: 'Привет, Vue!'
+            }
+        })
+	</script>
+</body>
+</html>
